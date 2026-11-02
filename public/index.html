@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mini-agent</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <span>mini-agent</span>
+        </div>
+        <div class="header-right">
+          <span id="count" class="count"></span>
+          <button id="clear" class="ghost" type="button">清空会话</button>
+        </div>
+      </header>
+
+      <main id="messages" class="messages" aria-live="polite"></main>
+
+      <div id="status" class="status" hidden></div>
+
+      <footer class="composer">
+        <textarea
+          id="input"
+          rows="1"
+          placeholder="输入消息，Enter 发送，Shift + Enter 换行"
+        ></textarea>
+        <button id="send" type="button">发送</button>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

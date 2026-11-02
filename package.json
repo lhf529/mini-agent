@@ -1,0 +1,21 @@
+{
+  "name": "mini-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dev:web": "tsx src/web.ts",
+    "test": "tsx src/errors-test.ts && tsx src/store-test.ts && tsx src/server-test.ts && tsx src/memory-test.ts && tsx src/timeout-test.ts && tsx src/mock-test.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.67.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
